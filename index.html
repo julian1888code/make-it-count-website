@@ -6,73 +6,131 @@
     <title>Make It Count</title>
 
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #111;
-            color: white;
-        }
-
-        header {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px;
+        * {
             box-sizing: border-box;
         }
 
-        h1 {
-            font-size: 70px;
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
             margin: 0;
+            font-family: Arial, sans-serif;
+            background: #050505;
+            color: white;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+
+            background:
+                radial-gradient(circle at center, #252525 0%, #111 35%, #050505 75%, #000 100%);
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        h1 {
+            font-size: clamp(55px, 9vw, 110px);
+            letter-spacing: 8px;
+            margin: 0;
+            font-weight: 800;
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
         }
 
         .tagline {
-            font-size: 24px;
-            color: #bbb;
-            margin: 20px 0 30px;
+            font-size: 22px;
+            color: #aaa;
+            margin: 20px 0 40px;
+            letter-spacing: 2px;
         }
 
-        .button {
+        .play-button {
             display: inline-block;
-            padding: 15px 30px;
+            padding: 16px 45px;
             background: white;
             color: black;
             text-decoration: none;
+            font-size: 18px;
             font-weight: bold;
-            border-radius: 5px;
+            letter-spacing: 2px;
+            border-radius: 4px;
+            transition: 0.25s;
         }
 
+        .play-button:hover {
+            background: #ddd;
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+        }
+
+        /* CONTENT SECTIONS */
         section {
             max-width: 900px;
             margin: auto;
-            padding: 80px 30px;
+            padding: 100px 30px;
         }
 
         h2 {
             font-size: 40px;
+            margin-bottom: 25px;
         }
 
         p {
             font-size: 18px;
-            line-height: 1.6;
-            color: #ccc;
+            line-height: 1.7;
+            color: #bbb;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: white;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 14px;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>MAKE IT COUNT</h1>
-        <div class="tagline">One bullet. Make it count.</div>
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-content">
 
-        <a class="button" href="#about">Learn More</a>
-    </header>
+            <h1>MAKE IT COUNT</h1>
 
+            <div class="tagline">
+                One bullet. Make it count.
+            </div>
+
+            <a class="play-button" href="#about">
+                PLAY GAME
+            </a>
+
+        </div>
+    </div>
+
+
+    <!-- ABOUT -->
     <section id="about">
+
+        <div class="divider"></div>
+
         <h2>About the Game</h2>
 
         <p>
@@ -80,24 +138,42 @@
             every shot matters. Use your environment, ricochet shots,
             and chain reactions to clear each room with a single bullet.
         </p>
+
     </section>
 
+
+    <!-- GAMEPLAY -->
     <section>
+
+        <div class="divider"></div>
+
         <h2>Gameplay</h2>
 
         <p>
             Plan your shot carefully, use objects around you,
             and make every bullet count.
         </p>
+
     </section>
 
+
+    <!-- TEAM -->
     <section>
+
+        <div class="divider"></div>
+
         <h2>The Team</h2>
 
         <p>
             Created by our team as a game development project.
         </p>
+
     </section>
+
+
+    <footer>
+        Make It Count © 2026
+    </footer>
 
 </body>
 </html>
