@@ -80,7 +80,7 @@
 
         /* SECTIONS */
         section {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
             padding: 100px 30px;
         }
@@ -103,11 +103,35 @@
             margin-bottom: 30px;
         }
 
-        /* PITCH */
-        .pitch {
-            font-size: 23px;
+        /* GAME DESCRIPTION */
+        .game-description {
+            font-size: 21px;
             line-height: 1.7;
             color: #ddd;
+        }
+
+        /* IMAGES */
+        .game-image {
+            width: 100%;
+            display: block;
+            border-radius: 6px;
+            margin-top: 35px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+        }
+
+        /* GAMEPLAY IMAGE GRID */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            display: block;
+            border-radius: 6px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
         }
 
         /* TRAILER */
@@ -150,7 +174,8 @@
 
         /* MOBILE */
         @media (max-width: 600px) {
-            .team {
+            .team,
+            .image-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -158,8 +183,8 @@
                 font-size: 32px;
             }
 
-            .pitch {
-                font-size: 20px;
+            .game-description {
+                font-size: 19px;
             }
         }
     </style>
@@ -189,44 +214,94 @@
     </div>
 
 
-    <!-- PITCH -->
+    <!-- THE GAME -->
     <section>
 
         <div class="divider"></div>
 
         <h2>The Game</h2>
 
-        <p class="pitch">
+        <p class="game-description">
             Make It Count is a top-down puzzle action game where
             one bullet is all you get. Players must carefully plan
             each shot, using ricochets, environmental objects, and
             chain reactions to eliminate every target in the room.
             Every decision matters because there is no room for wasted
-            shots. What looks like a simple room becomes a puzzle of
-            timing, positioning, and precision.
+            shots.
         </p>
+
+        <img
+            class="game-image"
+            src="images/Title Page.png"
+            alt="Make It Count title screen"
+        >
 
     </section>
 
 
-    <!-- ABOUT -->
+    <!-- GAMEPLAY -->
     <section>
 
         <div class="divider"></div>
 
-        <h2>About the Game</h2>
+        <h2>Gameplay</h2>
 
         <p>
-            Make It Count combines puzzle solving with action gameplay.
-            Instead of relying on fast reactions or a large supply of
-            ammunition, the player has to think ahead and find the
-            perfect way to use their single bullet.
+            Each room presents the player with a new puzzle. Before
+            firing, players need to study the environment and determine
+            how their bullet will travel.
         </p>
 
+        <div class="image-grid">
+
+            <img
+                src="images/Arrow Example 1.png"
+                alt="Make It Count arrow example"
+            >
+
+            <img
+                src="images/Arrow Example 2.png"
+                alt="Make It Count ricochet example"
+            >
+
+        </div>
+
         <p>
-            The environment is an important part of each puzzle.
-            Players can use walls, objects, and other elements in the
-            room to redirect their shot and create chain reactions.
+            Ricochets allow players to redirect their bullet around the
+            environment and reach targets that may not be directly in
+            front of them. Finding the correct angle is an important
+            part of solving each room.
+        </p>
+
+        <img
+            class="game-image"
+            src="images/Contract Accept Screen.png"
+            alt="Make It Count contract screen"
+        >
+
+        <p>
+            Contracts provide the player with their missions and give
+            each level a specific objective to complete.
+        </p>
+
+        <div class="image-grid">
+
+            <img
+                src="images/Mission Complete.png"
+                alt="Make It Count mission complete screen"
+            >
+
+            <img
+                src="images/List of levels.png"
+                alt="Make It Count level selection screen"
+            >
+
+        </div>
+
+        <p>
+            Successfully completing a room allows the player to
+            progress through the available levels and take on more
+            challenging puzzles.
         </p>
 
     </section>
@@ -256,29 +331,6 @@
             </iframe>
 
         </div>
-
-    </section>
-
-
-    <!-- GAMEPLAY -->
-    <section>
-
-        <div class="divider"></div>
-
-        <h2>Gameplay</h2>
-
-        <p>
-            Each room presents the player with a new puzzle. Before
-            firing, players need to study the environment and determine
-            how their bullet will travel.
-        </p>
-
-        <p>
-            Ricochets and environmental interactions allow a single
-            shot to reach multiple targets. The challenge comes from
-            finding the correct sequence of actions and making the most
-            efficient use of the environment.
-        </p>
 
     </section>
 
