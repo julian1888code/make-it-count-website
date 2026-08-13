@@ -119,6 +119,15 @@
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
         }
 
+        /* CONTRACT IMAGE */
+        .contract-image {
+            width: 70%;
+            display: block;
+            margin: 35px auto 0;
+            border-radius: 6px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+        }
+
         /* GAMEPLAY IMAGE GRID */
         .image-grid {
             display: grid;
@@ -177,6 +186,10 @@
             .team,
             .image-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .contract-image {
+                width: 100%;
             }
 
             h2 {
@@ -274,7 +287,7 @@
         </p>
 
         <img
-            class="game-image"
+            class="contract-image"
             src="images/Contract Accept Screen.png"
             alt="Make It Count contract screen"
         >
@@ -284,25 +297,23 @@
             each level a specific objective to complete.
         </p>
 
-        <div class="image-grid">
-
-            <img
-                src="images/Mission Complete.png"
-                alt="Make It Count mission complete screen"
-            >
-
-            <img
-                src="images/List of levels.png"
-                alt="Make It Count level selection screen"
-            >
-
-        </div>
-
         <p>
             Successfully completing a room allows the player to
             progress through the available levels and take on more
             challenging puzzles.
         </p>
+
+        <img
+            class="game-image"
+            src="images/Mission Complete.png"
+            alt="Make It Count mission complete screen"
+        >
+
+        <img
+            class="game-image"
+            src="images/List of levels.png"
+            alt="Make It Count level selection screen"
+        >
 
     </section>
 
