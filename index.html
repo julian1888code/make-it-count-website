@@ -31,7 +31,13 @@
             padding: 40px 20px;
 
             background:
-                radial-gradient(circle at center, #252525 0%, #111 35%, #050505 75%, #000 100%);
+                radial-gradient(
+                    circle at center,
+                    #252525 0%,
+                    #111 35%,
+                    #050505 75%,
+                    #000 100%
+                );
         }
 
         .hero-content {
@@ -97,11 +103,52 @@
             margin-bottom: 30px;
         }
 
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: #666;
-            font-size: 14px;
+        /* TRAILER */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 6px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+            margin-top: 30px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* TEAM */
+        .team {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .team-member {
+            padding: 18px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            color: #ddd;
+            font-size: 18px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+            .team {
+                grid-template-columns: 1fr;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
         }
     </style>
 </head>
@@ -118,7 +165,11 @@
                 One bullet. Make it count.
             </div>
 
-            <a class="play-button" href="https://juliancode.itch.io/make-it-count?secret=Js8VgHOJDgCG8Sqs6QQeImXE" target="_blank">
+            <a
+                class="play-button"
+                href="https://juliancode.itch.io/make-it-count?secret=Js8VgHOJDgCG8Sqs6QQeImXE"
+                target="_blank"
+            >
                 ACCEPT CONTRACT
             </a>
 
@@ -138,6 +189,29 @@
             every shot matters. Use your environment, ricochet shots,
             and chain reactions to clear each room with a single bullet.
         </p>
+
+    </section>
+
+
+    <!-- TRAILER -->
+    <section>
+
+        <div class="divider"></div>
+
+        <h2>Trailer</h2>
+
+        <div class="video-container">
+
+            <!-- Replace YOUR_VIDEO_ID with your YouTube video ID -->
+            <iframe
+                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                title="Make It Count Trailer"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+        </div>
 
     </section>
 
@@ -164,12 +238,27 @@
 
         <h2>The Team</h2>
 
-        <p>
-            Created by our team as a game development ICS 485 project.
-        </p>
+        <div class="team">
+
+            <div class="team-member">
+                Julian Bejar
+            </div>
+
+            <div class="team-member">
+                Joseph Creollo
+            </div>
+
+            <div class="team-member">
+                Regan Richardson
+            </div>
+
+            <div class="team-member">
+                Trevor Suzuki
+            </div>
+
+        </div>
 
     </section>
-
 
 </body>
 </html>
