@@ -90,6 +90,7 @@
             margin-bottom: 25px;
         }
 
+        /* ALL BODY TEXT */
         p {
             font-size: 18px;
             line-height: 1.7;
@@ -101,13 +102,6 @@
             height: 3px;
             background: white;
             margin-bottom: 30px;
-        }
-
-        /* GAME DESCRIPTION */
-        .game-description {
-            font-size: 21px;
-            line-height: 1.7;
-            color: #ddd;
         }
 
         /* TITLE SCREEN */
@@ -159,6 +153,11 @@
             box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
         }
 
+        /* LIST OF LEVELS */
+        .levels-contract img:first-child {
+            width: 50%;
+        }
+
         /* TRAILER */
         .video-container {
             position: relative;
@@ -193,7 +192,7 @@
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 4px;
-            color: #ddd;
+            color: #bbb;
             font-size: 18px;
         }
 
@@ -209,16 +208,13 @@
             }
 
             .small-image,
-            .levels-contract img {
+            .levels-contract img,
+            .levels-contract img:first-child {
                 width: 70%;
             }
 
             h2 {
                 font-size: 32px;
-            }
-
-            .game-description {
-                font-size: 19px;
             }
         }
     </style>
@@ -255,7 +251,7 @@
 
         <h2>The Game</h2>
 
-        <p class="game-description">
+        <p>
             Make It Count is a top-down puzzle action game where
             one bullet is all you get. Players must carefully plan
             each shot, using ricochets, environmental objects, and
