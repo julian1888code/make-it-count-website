@@ -21,7 +21,7 @@
             color: white;
         }
 
-        /* HERO SECTION */
+        /* HERO */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -78,7 +78,7 @@
             box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
         }
 
-        /* CONTENT SECTIONS */
+        /* SECTIONS */
         section {
             max-width: 900px;
             margin: auto;
@@ -103,6 +103,13 @@
             margin-bottom: 30px;
         }
 
+        /* PITCH */
+        .pitch {
+            font-size: 23px;
+            line-height: 1.7;
+            color: #ddd;
+        }
+
         /* TRAILER */
         .video-container {
             position: relative;
@@ -113,6 +120,7 @@
             border-radius: 6px;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
             margin-top: 30px;
+            background: #111;
         }
 
         .video-container iframe {
@@ -149,6 +157,10 @@
             h2 {
                 font-size: 32px;
             }
+
+            .pitch {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
@@ -177,17 +189,44 @@
     </div>
 
 
+    <!-- PITCH -->
+    <section>
+
+        <div class="divider"></div>
+
+        <h2>The Pitch</h2>
+
+        <p class="pitch">
+            Make It Count is a top-down puzzle action game where
+            one bullet is all you get. Players must carefully plan
+            each shot, using ricochets, environmental objects, and
+            chain reactions to eliminate every target in the room.
+            Every decision matters because there is no room for wasted
+            shots. What looks like a simple room becomes a puzzle of
+            timing, positioning, and precision.
+        </p>
+
+    </section>
+
+
     <!-- ABOUT -->
-    <section id="about">
+    <section>
 
         <div class="divider"></div>
 
         <h2>About the Game</h2>
 
         <p>
-            Make It Count is a top-down puzzle action game where
-            every shot matters. Use your environment, ricochet shots,
-            and chain reactions to clear each room with a single bullet.
+            Make It Count combines puzzle solving with action gameplay.
+            Instead of relying on fast reactions or a large supply of
+            ammunition, the player has to think ahead and find the
+            perfect way to use their single bullet.
+        </p>
+
+        <p>
+            The environment is an important part of each puzzle.
+            Players can use walls, objects, and other elements in the
+            room to redirect their shot and create chain reactions.
         </p>
 
     </section>
@@ -200,9 +239,14 @@
 
         <h2>Trailer</h2>
 
+        <p>
+            Gameplay trailer coming soon.
+        </p>
+
         <div class="video-container">
 
-            <!-- Replace YOUR_VIDEO_ID with your YouTube video ID -->
+            <!-- Replace YOUR_VIDEO_ID with the YouTube video ID -->
+
             <iframe
                 src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
                 title="Make It Count Trailer"
@@ -224,8 +268,44 @@
         <h2>Gameplay</h2>
 
         <p>
-            Plan your shot carefully, use objects around you,
-            and make every bullet count.
+            Each room presents the player with a new puzzle. Before
+            firing, players need to study the environment and determine
+            how their bullet will travel.
+        </p>
+
+        <p>
+            Ricochets and environmental interactions allow a single
+            shot to reach multiple targets. The challenge comes from
+            finding the correct sequence of actions and making the most
+            efficient use of the environment.
+        </p>
+
+    </section>
+
+
+    <!-- FUTURE DEVELOPMENT -->
+    <section>
+
+        <div class="divider"></div>
+
+        <h2>Future Development</h2>
+
+        <p>
+            One of the main areas we would like to develop further is
+            the story behind Make It Count. The current version focuses
+            mainly on the core gameplay, but a future version could
+            introduce a stronger narrative through contracts, objectives,
+            and context for each mission. This would give the player a
+            greater reason to progress through the game and make each
+            contract feel more meaningful.
+        </p>
+
+        <p>
+            We would also continue improving the collision and ricochet
+            systems. Making collisions more consistent and refining how
+            bullets interact with walls and objects would make shots feel
+            smoother and give players more precise control when planning
+            their solutions.
         </p>
 
     </section>
