@@ -110,33 +110,40 @@
             color: #ddd;
         }
 
-        /* IMAGES */
-        .game-image {
-            width: 100%;
-            display: block;
-            border-radius: 6px;
-            margin-top: 35px;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-        }
-
-        /* CONTRACT IMAGE */
-        .contract-image {
-            width: 70%;
+        /* STANDARD SMALL IMAGE */
+        .small-image {
+            width: 30%;
             display: block;
             margin: 35px auto 0;
             border-radius: 6px;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
         }
 
-        /* GAMEPLAY IMAGE GRID */
-        .image-grid {
+        /* ARROW EXAMPLES */
+        .arrow-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             margin-top: 35px;
         }
 
-        .image-grid img {
+        .arrow-grid img {
+            width: 100%;
+            display: block;
+            border-radius: 6px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+        }
+
+        /* CONTRACT + LEVELS */
+        .contract-levels {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 35px;
+            align-items: start;
+        }
+
+        .contract-levels img {
             width: 100%;
             display: block;
             border-radius: 6px;
@@ -184,12 +191,13 @@
         /* MOBILE */
         @media (max-width: 600px) {
             .team,
-            .image-grid {
+            .arrow-grid,
+            .contract-levels {
                 grid-template-columns: 1fr;
             }
 
-            .contract-image {
-                width: 100%;
+            .small-image {
+                width: 70%;
             }
 
             h2 {
@@ -244,7 +252,7 @@
         </p>
 
         <img
-            class="game-image"
+            class="small-image"
             src="images/Title Page.png"
             alt="Make It Count title screen"
         >
@@ -265,7 +273,8 @@
             how their bullet will travel.
         </p>
 
-        <div class="image-grid">
+        <!-- ARROW EXAMPLES -->
+        <div class="arrow-grid">
 
             <img
                 src="images/Arrow Example 1.png"
@@ -286,11 +295,20 @@
             part of solving each room.
         </p>
 
-        <img
-            class="contract-image"
-            src="images/Contract Accept Screen.png"
-            alt="Make It Count contract screen"
-        >
+        <!-- CONTRACT + LEVELS -->
+        <div class="contract-levels">
+
+            <img
+                src="images/Contract Accept Screen.png"
+                alt="Make It Count contract screen"
+            >
+
+            <img
+                src="images/List of levels.png"
+                alt="Make It Count level selection screen"
+            >
+
+        </div>
 
         <p>
             Contracts provide the player with their missions and give
@@ -303,16 +321,11 @@
             challenging puzzles.
         </p>
 
+        <!-- MISSION COMPLETE -->
         <img
-            class="game-image"
+            class="small-image"
             src="images/Mission Complete.png"
             alt="Make It Count mission complete screen"
-        >
-
-        <img
-            class="game-image"
-            src="images/List of levels.png"
-            alt="Make It Count level selection screen"
         >
 
     </section>
